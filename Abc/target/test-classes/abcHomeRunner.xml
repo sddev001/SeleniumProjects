@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ABC Homepage Test on Web browser" >
+
+    <!--sauce labs-->
+    <!--
+    <parameter name = "useSauceLabs" value = "true"/>
+    <parameter name = "userName" value = "sddev001"/>
+    <parameter name = "key" value = "fedce925-0914-4f51-9d58-296388ad528a"/>
+    <parameter name = "os" value = "WIN8"/>
+    <parameter name = "browserName" value = "firefox"/>
+    <parameter name = "browserVersion" value = "35"/>
+    <parameter name = "url" value = "http://www.abc.go.com"/>
+
+    <test name = "ABC Home Page ">
+        <classes>
+            <class name=AbcHome" />
+        </classes>
+    </test>
+        -->
+
+
+
+    <parameter name = "url" value = "http://www.abc.go.com"/>
+
+
+    <test name = "ABC Home Page ">
+        <classes>
+            <class name="AbcHome"/>
+        </classes>
+    </test>
+
+    <!--retry test-->
+
+    <listeners>
+        <listener class-name="retryTest.RetryListener"/>
+    </listeners>
+
+</suite>
