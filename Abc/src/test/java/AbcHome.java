@@ -65,5 +65,7 @@ public class AbcHome extends Base {
         sleepFor(3);
         typeByName("txtLoginEmail", "txtLoginPassword", "101");
 
+        System.out.println("Database testing successful");
+
     }
 }
